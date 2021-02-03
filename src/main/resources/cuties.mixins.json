@@ -1,0 +1,10 @@
+{
+  "required": true,
+  "package": "com.github.Evoslab.cuties.mixin",
+  "compatibilityLevel": "JAVA_8",
+  "mixins": [
+  ],
+  "injectors": {
+    "defaultRequire": 1
+  }
+}

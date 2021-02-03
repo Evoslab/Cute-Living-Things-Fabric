@@ -1,0 +1,38 @@
+{
+  "schemaVersion": 1,
+  "id": "surfandturfcuties",
+  "version": "1.0.0",
+
+  "name": "Surf and Turf Cuties",
+  "description": "Adds some cute sea creatures to minecraft!",
+  "authors": [
+    "Evoslab"
+  ],
+  "contact": {
+  },
+
+  "license": "MIT",
+  "icon": "assets/cuties/icon.png",
+
+  "environment": "*",
+  "entrypoints": {
+    "main": [
+      "com.github.Evoslab.cuties.SurfAndTurfCuties"
+    ],
+    "client": [
+      "com.github.Evoslab.cuties.SurfAndTurfCutiesClient"
+    ]
+  },
+  "mixins": [
+    "cuties.mixins.json"
+  ],
+
+  "depends": {
+    "fabricloader": ">=0.7.4",
+    "fabric": "*",
+    "minecraft": "1.16.x"
+  },
+  "suggests": {
+    "another-mod": "*"
+  }
+}
