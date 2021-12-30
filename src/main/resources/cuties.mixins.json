@@ -1,7 +1,7 @@
 {
   "required": true,
-  "package": "com.github.Evoslab.cuties.mixin",
-  "compatibilityLevel": "JAVA_8",
+  "package": "com.evoslab.cutelivingthings.mixin",
+  "compatibilityLevel": "JAVA_17",
   "mixins": [
   ],
   "injectors": {

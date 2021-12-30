@@ -1,38 +1,52 @@
 {
   "schemaVersion": 1,
-  "id": "surfandturfcuties",
-  "version": "1.0.0",
 
-  "name": "Surf and Turf Cuties",
-  "description": "Adds some cute sea creatures to minecraft!",
+  "id": "cutelivingthings",
+  "version": "${version}",
+  "license": "MIT",
+
+  "name": "Cute Living Things",
+  "icon": "assets/cutelivingthings/icon.png",
+  "description": "A mod that adds more cute mobs to the game!",
+
   "authors": [
     "Evoslab"
   ],
-  "contact": {
-  },
+  "contributors": [
+    "Evoli_934",
+    "StevenPlayzz"
+  ],
 
-  "license": "MIT",
-  "icon": "assets/cuties/icon.png",
+  "contact": {
+    "homepage": "https://www.curseforge.com/minecraft/mc-mods/cute-living-things-fabric",
+    "sources": "https://github.com/Evoslab/Cute-Living-Things-Fabric",
+    "issues": "https://github.com/Evoslab/Cute-Living-Things-Fabric/issues"
+  },
 
   "environment": "*",
   "entrypoints": {
     "main": [
-      "com.github.Evoslab.cuties.SurfAndTurfCuties"
+      "com.evoslab.cutelivingthings.CuteLivingThings"
     ],
     "client": [
-      "com.github.Evoslab.cuties.SurfAndTurfCutiesClient"
-    ]
+      "com.evoslab.cutelivingthings.CuteLivingThingsClient"
+    ],
+    "fabric-datagen": []
   },
-  "mixins": [
-    "cuties.mixins.json"
-  ],
 
   "depends": {
-    "fabricloader": ">=0.7.4",
+    "fabricloader": ">=0.12.6",
     "fabric": "*",
-    "minecraft": "1.16.x"
+    "minecraft": "1.18.x",
+    "java": ">=17"
   },
-  "suggests": {
-    "another-mod": "*"
+
+  "custom": {
+    "modmenu": {
+      "badges": [],
+      "links": {
+        "mod.example.contact.discord": "https://discord.gg/MDfJxJZ"
+      }
+    }
   }
 }
